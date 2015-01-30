@@ -1,0 +1,19 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Angular Directive Talking to Controllers</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/css/foundation.min.css">
+	</head>
+	<body>
+		<div ng-app="app">
+			<div ng-controller="AppCtrl">
+				<div enter="loading()">Loading Data</div>
+				<hr/>
+				<div enter="deleting()">Deleting Data</div>
+			</div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>

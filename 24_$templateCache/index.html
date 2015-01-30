@@ -1,0 +1,27 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>templateCache</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/css/foundation.min.css">
+	</head>
+	<body>
+		<div ng-app="app">
+		<!-- Move to use templateCache -->
+		  <!-- <script type="text/ng-template" id="zippy.html">
+		  	<div><h3 ng-click="toggleContent()">{{ title }}</h3></div>
+		  	<div ng-show="isContentVisible" ng-transclude></div>
+		  </script> -->
+
+		  <input type="text" ng-model="model.title"></input>
+		  <input type="text" ng-model="model.content"></input>
+
+		  <zippy title="{{ model.title }}">
+		  	This is content: {{ model.content }}
+		  </zippy>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
+

@@ -1,0 +1,26 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Component and Container</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/css/foundation.min.css">
+	</head>
+	<body>
+		
+		<div ng-app="app">
+			<h3>Content</h3>
+		  	<clock timezone="MST"></clock>
+		  	<h3>Container</h3>
+		  	<panel title="I am a title">
+		  		<clock timezone="PST"></clock>
+		  		<clock timezone="PST"></clock>
+		  		<clock timezone="PST"></clock>
+		  		<clock timezone="PST"></clock>
+		  	</panel>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-route.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
+

@@ -1,0 +1,26 @@
+[
+	{
+		name: "Robert Downey JR",
+		character: "Iron man"
+	},
+	{
+		name: "Chris Evan",
+		character: "Captain America"
+	},
+	{
+		name: "Mark Ruffalo",
+		character: "The Hulk"
+	},
+	{
+		name: "Chris hemsworth",
+		character: "Thor"
+	},
+	{
+		name: "Clark Gregg",
+		character: "Agent Phil Coulson"
+	},
+	{
+		name: "Tom Hiddleston",
+		character: "Loki"
+	}
+]

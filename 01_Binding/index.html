@@ -1,0 +1,24 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Angular Binding</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/css/foundation.min.css">
+	</head>
+	<body>
+		<div ng-app="">
+			<h2>{{ 1 + 4 }}</h2>
+			<h2>{{ "Wanasak" + " Surentaranggul"}}</h2>	
+			<input type="text" ng-model="data.message"></input>
+			<h2>{{ data.message }}</h2>	
+			<div class="{{ data.message }}">
+				{{ data.message }}
+			</div>
+		</div>	
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+	</body>
+</html>
+
+<!-- Binding can be represented in AngularJS using the ng-bind directive or with double curly brackets -->
+
+<!-- Binding is most useful when you create an input or a way for the user to interact with the site of your app. Let’s create an input with an attribute ng-model -->

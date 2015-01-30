@@ -1,0 +1,21 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Angular Isolate Scope</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/css/foundation.min.css">
+	</head>
+	<body>
+		<div ng-app="app">
+			<div ng-controller="ChoreCtrl">
+				<kid done="logChore(chore)"></kid>
+
+				<kid done="logChore(chore)"></kid>
+			</div>	
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
+
+<!-- if we type a chore into any of the input boxes, all of the kids are being told to do the same chore. This is because they’re all sharing the same scope at this point. What we need to do is isolate them so they don’t share the bindings. We can do this by setting the scope property on the object -->

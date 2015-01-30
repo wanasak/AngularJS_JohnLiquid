@@ -1,0 +1,27 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>templateUrl</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/css/foundation.min.css">
+	</head>
+	<body>
+		<div ng-app="app">
+		  <script type="text/ng-template" id="zippy.html">
+		  	<div><h3 ng-click="toggleContent()">{{ title }}</h3></div>
+		  	<div ng-show="isContentVisible" ng-transclude></div>
+		  </script>
+
+		  <input type="text" ng-model="model.title"></input>
+		  <input type="text" ng-model="model.content"></input>
+
+		  <zippy title="{{ model.title }}">
+		  	This is content: {{ model.content }}
+		  </zippy>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
+
+<!-- One thing to note is that this application must be served through a web server in order to allow the separate html file to be accessed by javascript. Also, if you choose to use the script tag method, the script tag must live within the ng-app directive -->

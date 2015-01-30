@@ -1,0 +1,21 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Basic Animation</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/css/foundation.min.css">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		
+		<div ng-app="app" ng-controller="appCtrl as app">
+			<div class="button" ng-click="app.toggle=!app.toggle">Toggle Animation</div>	
+
+			<div class="toggle" ng-show="app.toggle">Some content</div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-animate.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
+

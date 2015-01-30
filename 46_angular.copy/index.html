@@ -1,0 +1,36 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>angular.copy</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/css/foundation.min.css">
+	</head>
+	<body ng-app="app" ng-controller="appCtrl as app">
+		
+		<form>
+			<!-- <input type="text" ng-model="app.selectedContact.firstname"></input> -->
+			<input type="text" ng-model="app.contactCopy.firstname"></input>
+			<button ng-click="app.saveContact()">Save</button>
+		</form>
+
+		<table class="table table-striped">
+			<thead>
+				<tr>
+				<td>First</td>
+				<td>Last</td>
+				<td>Phone</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="contact in app.contacts" ng-click="app.selectContact(contact)">
+					<td>{{ contact.firstname }}</td>
+					<td>{{ contact.lastname }}</td>
+					<td>{{ contact.phone }}</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
+

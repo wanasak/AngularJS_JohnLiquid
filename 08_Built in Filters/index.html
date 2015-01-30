@@ -1,0 +1,23 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Angular ngFilter</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	</head>
+	<body>
+		<div ng-app="myApp">
+			<div ng-controller="AvengersCtrl">
+				<input type="text" ng-model="search.$"></input>
+				<table>
+					<tr ng-repeat="actor in avengers.cast | orderBy:'-name' | limitTo:4 | filter:search">
+						<td>{{ actor.name | uppercase }}</td>
+						<td>{{ actor.character | lowercase }}</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>

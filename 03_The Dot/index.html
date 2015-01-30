@@ -1,0 +1,40 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Angular Controller</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	</head>
+	<body ng-app="">
+		<!-- <input type="text" ng-model="data.message"></input>
+		<h2>{{ data.message }}</h2>
+
+		<div ng-controller="FirstCtrl"> 
+			<input type="text" ng-model="data.message"></input>
+			<h2>{{ data.message }}</h2>
+		</div>
+
+		<div ng-controller="SecondCtrl"> 
+			<input type="text" ng-model="data.message"></input>
+			<h2>{{ data.message }}</h2>
+		</div> -->
+
+		<input type="text" ng-model="message"></input>
+		<h2>{{ message }}</h2>
+
+		<div ng-controller="FirstCtrl"> 
+			<input type="text" ng-model="message"></input>
+			<h2>{{ message }}</h2>
+		</div>
+
+		<div ng-controller="SecondCtrl"> 
+			<input type="text" ng-model="message"></input>
+			<h2>{{ message }}</h2>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
+
+<!-- If we were to replace the instances of data.message with just message,
+It breaks the scope inheritance that was binding all the data.message instances. Now, each new ng-model of message is creating a new instance of message -->
